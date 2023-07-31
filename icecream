@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main(){
+	int a,b,j=0,k=0,z=0,e=0,o=0;
+	int ar[a],res[a];
+	scanf("%d %d",&a,&b);
+	if(a%2==0){
+		e=a/2;
+		o=a/2;
+	}
+	else{
+		e=a/2;
+		o=(a/2)+1;
+	}
+	int chocy[o],vani[e];
+	for(int i=0;i<a;i++){
+		ar[i]=i+1;
+		if(ar[i]%2!=0){
+		chocy[j++]=ar[i];
+		}
+		else{
+		vani[k++]=ar[i];		
+		}
+		printf("%d ",ar[i]);
+	}
+	printf("\n");
+	for(int i=0;i<o;i++){
+		res[i]=chocy[i];
+	}
+	for(int i=o;i<a;i++){
+		res[i]=vani[z++];
+	}
+	for(int i=0;i<a;i++){
+		printf("%d ",res[i]);
+	}
+	for(int i=0;i<a;i++){
+		if(i==b-1){
+			printf("\n %d ",res[i]);
+		}
+	}
+	
+	
+}
